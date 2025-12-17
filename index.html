@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="curved-shape"></div>
+    <div class="curved-shape2"></div>
+
+    <!-- LOGIN -->
+    <div class="form-box Login">
+        <h2 class="animation" style="--D:0; --S:21" id="main.btn">Login</h2>
+        <form>
+            <div class="input-box animation" style="--D:1; --S:22">
+                <input type="text" required>
+                <label>Username</label>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box animation" style="--D:2; --S:23">
+                <input type="password" required>
+                <label>Password</label>
+                <i class='bx bx-lock'></i>
+            </div>
+
+            <div class="input-box animation" style="--D:3; --S:24">
+                <button class="btn" type="submit" id="clickable">Login</button>
+            </div>
+
+            <div class="regi-link animation" style="--D:4; --S:25">
+                <p>Don't have an account ?
+                    <a href="#" class="SignUpLink">Sign up</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div class="info-content Login">
+        <h2 class="animation" style="--D:0; --S:20">Welcome Back</h2>
+        <p class="animation" style="--D:1; --S:21">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="form-box Register">
+        <h2 class="animation" style="--li:17; --S:0;">Register</h2>
+        <form>
+            <div class="input-box animation" style="--li:18; --S:1;">
+                <input type="text" required>
+                <label>Username</label>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box animation" style="--li:18; --S:1;">
+                <input type="email" required>
+                <label>Email</label>
+                <i class='bx  bx-envelope'></i> 
+            </div>
+
+            <div class="input-box animation" style="--li:19; --S:2;">
+                <input type="password" required>
+                <label>Password</label>
+                <i class='bx bx-lock'></i>
+            </div>
+
+            <div class="input-box animation" style="--li:20; --S:3;">
+                <button class="btn" type="submit">Register</button>
+            </div>
+
+            <div class="regi-link animation" style="--li:21; --S:4;">
+                <p>Already have an account ?
+                    <a href="#" class="SignInLink">Sign in</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div class="info-content Register">
+        <h2 class="animation" style="--li:17; --S:0;">Welcome</h2>
+        <p class="animation" style="--li:18; --S:1;">
+            Create your account to get started.
+        </p>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

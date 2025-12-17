@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: radial-gradient(circle at top, #1b1b1b, #000);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Dropdown */
+select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  perspective: 1200px;
+}
+
+
+/* Card */
+.movie-card {
+  background: #151515;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+/* Hover animation: coming toward user */
+.movie-card:hover {
+  transform: scale(1.05) translateZ(5px);
+  box-shadow: 0 25px 60px blueviolet;
+  z-index: 10;
+}
+
+/* Image */
+.movie-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Info */
+.movie-info {
+  padding: 8px;
+}
+
+.movie-info h3 {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.movie-info p {
+  color: #ccc;
+  font-size: 12px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+}

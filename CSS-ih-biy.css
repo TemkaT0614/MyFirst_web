@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+.ashibay{
+height: 100px;
+width: 100%;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li > a {
+    display: block;
+    padding: 12px 20px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-align: center;
+}
+.menu > li > a:hover {
+    
+    background-color: red;
+    transform: scale(1.05);
+}
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 12px 20px;   
+    background-color: grey;  
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;   
+    text-align: center;
+    transition: 0.3s;
+}
+.dropdown li a:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+.menu li:hover .dropdown {
+    display: block;
+}
+img{width: 75px;
+    float: left;
+    margin: 20px;}
+
+.dropdown li > .submenu {
+            list-style: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 100;
+        }
+.dropdown li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.dropdown li a, .submenu li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+.dropdown li a:hover, .submenu li a:hover 
+{
+    background-color: red;
+    transform: scale(1.05);
+    }
+    .nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-buttons a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    background-color: #388E3C;
+}

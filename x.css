@@ -1,0 +1,62 @@
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+select, button {
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 6px;
+  margin: 5px;
+  border: none;
+}
+
+button {
+  background: blueviolet;
+  color: white;
+  cursor: pointer;
+}
+
+.music-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.music-card {
+  text-decoration: none;
+  color: white;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px blueviolet;
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.music-card h3 {
+  font-size: 14px;
+  margin: 8px 0 4px;
+}
+
+.music-card p {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.artist-avatar {
+  font-size: 50px;
+  margin: 20px 0 10px;
+}

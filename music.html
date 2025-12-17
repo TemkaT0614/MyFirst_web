@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Genre</title>
+    <link rel="icon" href="music.png" type="image/png">
+
+  <link rel="stylesheet" href="xino.css">
+</head>
+<body>
+<a href="biy-daalt.html" ><img src="home.png" alt="Home"style="width: 75px; float: left; " ></a>
+
+ <div style="left: -20px;"> <h1>🎶 Music Explorer</h1></div>
+
+  <!-- Дууны нэрээр хайх -->
+  <input type="text" id="songInput" placeholder="Дууны нэрээ бичнэ үү" onkeydown="handleEnter(event)">
+
+  <button onclick="searchMusic()">Дуу хайх</button>
+
+  <h2 id="sectionTitle"></h2>
+
+  <div class="music-grid" id="musicGrid"></div>
+
+  <script src="xino.js"></script>
+</body>
+</html>

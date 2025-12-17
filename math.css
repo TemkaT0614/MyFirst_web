@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+            color: #333;
+        }
+
+
+main {
+            float: inline-start;
+            margin: auto;
+            max-width: 800px;
+            background-color: #A7cee0;
+            margin-top: 150px;
+            border-radius: 8px;
+        }
+        .formula {
+            font-size: 20px;
+            margin: 15px 0;
+        }

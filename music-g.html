@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Explorer</title>
+  <link rel="icon" href="music.png" type="image/png">
+
+  <link rel="stylesheet" href="x.css">
+</head>
+<body>
+
+<a href="biy-daalt.html" ><img src="home.png" alt="Home"style="width: 75px; float: left; " ></a>
+ 
+  <h1 >🎶 Music Explorer</h1>
+
+  <!-- Genre сонгох -->
+  <select id="genreSelect">
+    <option value="pop">Pop</option>
+    <option value="rock">Rock</option>
+    <option value="hip hop">Hip Hop</option>
+    <option value="jazz">Jazz</option>
+    <option value="electronic">Electronic</option>
+  </select>
+
+  <button onclick="searchMusic()">Дуу хайх</button>
+  <button onclick="loadTopArtists()">Top 10 Дуучин</button>
+
+
+  <h2 id="sectionTitle"></h2>
+
+  <div class="music-grid" id="musicGrid"></div>
+
+  <script src="x.js"></script>
+</body>
+</html>
